@@ -95,6 +95,9 @@ if [ "$INPUT_TYPE" = "directory" ]; then
     fi
 fi
 
+echo "Check if pg_dump exists"
+which pg_dump
+
 #----------------------------------------
 # Execute SSH Commands to create backups first
 #----------------------------------------
